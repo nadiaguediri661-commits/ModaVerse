@@ -1,0 +1,152 @@
+
+
+.clothesgallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.add-clothes-container {
+display: flex;
+justify-content: center;
+margin: 25px 0;
+}
+
+.o{display: flex;
+gap:50px}
+.add-clothes-btn {
+background-color:rosybrown;
+color: white;
+padding: 12px 28px;
+border: none;
+border-radius: 8px;
+font-size: 1rem;
+font-weight: bold;
+cursor: pointer;
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+transition: background 0.2s ease-in-out;
+}
+
+.add-clothes-btn:hover {
+background-color: #20a497;
+}
+
+.clothes-card {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+
+.clothes-card h4 {
+  margin-bottom: 15px;
+  font-size: 1.2rem;
+  color: #e44d26; 
+}
+
+
+.clothes-card div {
+  display: flex;
+  gap: 10px; 
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.clothes-card button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  flex: 1; 
+  max-width: 120px;
+}
+
+
+.clothes-card button:nth-child(1) {
+  background-color: #ff4d4d;
+  color: white;
+}
+
+.clothes-card button:nth-child(1):hover {
+  background-color: #e60000;
+}
+
+.clothes-card button:nth-child(2) {
+  background-color: #4a5568;
+  color: white;
+}
+
+.clothes-card button:nth-child(2):hover {
+  background-color: #2d3748;
+}
+
+
+.clothes-card input[type="number"] {
+  width: 80px;
+  padding: 6px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-right: 5px;
+}
+
+
+
+
+.clothes-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08);
+}
+
+
+.clothes-card img {
+  width: 100%;
+  height: 200px;
+  border-radius: 12px;
+  background-color: #f1f3f5;
+}
+
+
+.clothes-card h3 {
+  margin: 15px 0 8px 0;
+  font-size: 1.25rem;
+  color: #2d3748;
+  font-weight: 700;
+}
+
+
+.clothes-card h4 {
+  margin: auto 0 0 0;
+  font-size: 1.2rem;
+  color: #ff6b35;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.admin-buttons {
+  display: flex !important;
+  flex-direction: row !important; /* Force l'alignement horizontal */
+  gap: 12px; /* Espace entre Remove et Edit */
+  justify-content: center;
+  width: 100%;
+  margin-top: 10px;
+}
+
+
+.admin-buttons button {
+  flex: 1; 
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+}

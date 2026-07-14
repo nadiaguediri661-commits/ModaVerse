@@ -1,0 +1,70 @@
+main-header {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #ffffff;
+    padding: 15px 40px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05); /* ظل خفيف أسفل الهيدر */
+  }
+  
+  /* السطر العلوي: توزيع اللوجو لليسار والأزرار لليمين */
+  .header-top {
+    display: flex;
+    justify-content: space-between; /* يضع اللوجو في أقصى اليسار والأفعال في أقصى اليمين */
+    align-items: center; /* يجعلهم على نفس المستوى الأفقي تماماً */
+    padding-bottom: 15px;
+  }
+  
+  /* تنسيق اسم المتجر */
+  .logo-area h1 {
+    font-size: 28px;
+    color: #111111;
+    margin: 0;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+  }
+  
+  
+  .user-actions {
+    display: flex;
+    gap: 25px; 
+    margin-right: 40px;
+  }
+  
+  .action-link {
+    text-decoration: none;
+    color: #444444;
+    font-size: 15px;
+    font-weight: 500;
+    transition: color 0.2s ease;
+  }
+  
+  .action-link:hover {
+    color: #ff4757; 
+  }
+  
+
+  .header-bottom-nav {
+    display: flex;
+    justify-content: center;
+    gap: 35px; 
+    padding-top: 15px;
+    border-top: 2px solid #f1f2f6;
+  }
+  
+  /* تنسيق أزرار الأقسام (ليليا) */
+  .category-btn {
+    text-decoration: none;
+    color: #555555;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 8px 4px;
+    text-transform: uppercase; /* حروف كبيرة */
+    border-bottom: 2px solid transparent; /* خط مخفي تحت الزر */
+    transition: all 0.2s ease;
+  }
+  
+  /* تأثير عند تمرير الماوس أو عندما يكون القسم نشطاً */
+  .category-btn:hover, 
+  .category-btn.active {
+    color: #ff4757; /* لون وردي/أحمر جذاب يناسب المتاجر */
+    border-bottom: 2px solid #ff4757; /* يظهر الخط الملون تحت القسم المحدد */
+  }

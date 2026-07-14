@@ -1,0 +1,134 @@
+.cart-container {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 20px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.cart-content-layout {
+  display: flex;
+  gap: 30px;
+  align-items: flex-start;
+}
+
+.cart-items-section {
+  flex: 1.5;
+}
+
+.cart-summary-section {
+  flex: 1;
+}
+
+/* === تنسيق قائمة المنتجات === */
+.cart-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* كارت المنتج الفردي داخل السلة */
+.cart-container .cart-item {
+  display: flex !important;
+  flex-direction: row !important; /* إجبار العناصر على الاصطفاف أفقياً */
+  align-items: center !important;
+  justify-content: space-between !important;
+  background: #ffffff !important;
+  border: 1px solid #eeeeee !important;
+  border-radius: 8px !important;
+  padding: 12px 15px !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.02) !important;
+}
+
+/* حاوية الصورة لضمان ثبات مقاساتها بنسبة 100% */
+.cart-container .cart-item-image-wrapper {
+  width: 80px !important;
+  height: 80px !important;
+  min-width: 80px !important; 
+  min-height: 80px !important;
+  max-width: 80px !important; 
+  max-height: 80px !important;
+  overflow: hidden !important;
+  border-radius: 6px !important;
+  border: 1px solid #f0f0f0 !important;
+  background-color: #fcfcfc !important;
+  flex-shrink: 0 !important;
+}
+
+/* الصورة داخل الحاوية */
+.cart-container .cart-item-img {
+  width:80px  !important;
+  height: 80px !important;
+  object-fit: cover !important; 
+  display: block !important;
+}
+
+/* تفاصيل المنتج (الاسم والسعر) */
+.cart-container .cart-item-details {
+  flex: 1 !important;
+  padding: 0 20px !important;
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 5px !important;
+  text-align: left !important;
+}
+
+.cart-container .cart-item-name {
+  font-size: 0.95rem !important;
+  font-weight: 600 !important;
+  color: #333333 !important;
+  margin: 0 !important;
+}
+
+.cart-container .cart-item-price {
+  font-size: 0.95rem !important;
+  font-weight: 700 !important;
+  color: #e74c3c !important;
+}
+
+/* زر الحذف */
+.cart-container .cart-item-del-btn {
+  background: #fdf2f2 !important;
+  border: 1px solid #fde2e2 !important;
+  color: #e74c3c !important;
+  font-size: 0.85rem !important;
+  padding: 8px 12px !important;
+  border-radius: 6px !important;
+  cursor: pointer !important;
+  transition: all 0.2s ease !important;
+}
+
+.cart-container .cart-item-del-btn:hover {
+  background-color: #e74c3c !important;
+  color: #ffffff !important;
+}
+
+/* صندوق ملخص الفاتورة */
+.summary-box {
+  background: #ffffff;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.summary-row {
+  display: flex;
+  justify-content: space-between;
+  margin: 15px 0;
+  font-size: 1.1rem;
+}
+
+.total-price-highlight {
+  color: #e74c3c;
+  font-weight: bold;
+}
+
+.checkout-step-btn {
+  width: 100%;
+  background: #111;
+  color: #fff;
+  border: none;
+  padding: 12px;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+}
